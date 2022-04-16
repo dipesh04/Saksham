@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import Login from "./components/login/login";
+import Landing_Page from "./components/Landing/Landing";
 // function RequireAuth({ children }) {
 //   var token = localStorage.getItem("authToken");
 //   console.log(token);
@@ -40,6 +41,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/login" element={<Login />} />
+          <Route exact path="/" element={<Landing_Page/>} />
         </Routes>
       </Router>
     </div>
