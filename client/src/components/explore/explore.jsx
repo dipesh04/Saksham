@@ -74,20 +74,6 @@ function Explore(props) {
   return (
     <div className={styles.explore}>
       <Navbar />
-      <div className="row">
-        <div className="col-3">
-          Sort By:
-          <select name="" id="">
-            <option value="">--SELECT--</option>
-          </select>
-          <select name="" id="">
-            <option value="">--SELECT--</option>
-          </select>
-        </div>
-        <div className="col-9">
-          <input type="text" />
-        </div>
-      </div>
       <div className="row align-items-center">
         <div className="col-4">
           Sort By:
@@ -120,7 +106,7 @@ function Explore(props) {
           />
         </div>
       </div>
-      <div className="row align-items-center">
+      <div className="row ">
         <h1>Results</h1>
         {searchItem.length > 0 ? (
           searchItem.map((ngo, index) => {
